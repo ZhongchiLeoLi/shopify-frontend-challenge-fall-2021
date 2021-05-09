@@ -1,5 +1,7 @@
 # Shoppies
 
+https://shoppies-zhongchileoli.netlify.app/
+
 A website for users to search movies and choose 5 of their favourite movies for nomination.
 
 ## Built with:
