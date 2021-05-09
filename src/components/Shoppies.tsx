@@ -30,7 +30,7 @@ const Shoppies: FC<ShoppiesProps> = ({ children }) => {
   const fetchPage = async (page: number) => {
     setIsLoading(true);
     try {
-      const { data } = await axios.get("http://www.omdbapi.com", {
+      const { data } = await axios.get("https://www.omdbapi.com", {
         params: {
           apikey: "acfd3ab0",
           type: "movie",

@@ -24,7 +24,7 @@ const SearchBar: FC<SearchBarProps> = ({isLoading, onLoading, onResults, onError
     const searchMovies = async (q: string) => {
       onLoading(true);
       try {
-        const { data } = await axios.get("http://www.omdbapi.com", {
+        const { data } = await axios.get("https://www.omdbapi.com", {
           params: {
             apikey: "acfd3ab0",
             type: "movie",
