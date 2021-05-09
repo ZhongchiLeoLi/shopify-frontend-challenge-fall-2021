@@ -10,6 +10,14 @@ A website for users to search movies and choose 5 of their favourite movies for 
 * React.js
 * Chakra UI
 
+## Features:
+
+* Fully responsive layout
+* Interactive hover and toggle animations
+* Live search update when user is typing (debounced by 700ms to prevent request DDoSing)
+* Pagination for search results
+* Saved nomination list in localStorage
+
 ## Next steps:
 
 * Connect with Firebase to provide user authentication and data storage, allowing users to save their selections for revisiting later
