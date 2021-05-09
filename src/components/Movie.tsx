@@ -35,7 +35,7 @@ const Movie: FC<MovieProps> = ({ info, isSelectable, isSelected, onToggle }) => 
     <VStack p={[2, 4]} >
       <Box pos="relative">
         {Poster !== 'N/A'
-          ? <Image w={48} h={[56, 72]} src={Poster} boxShadow="lg" objectFit="cover" />
+          ? <Image w={48} h={[56, 72]} src={Poster} boxShadow="lg" objectFit="cover" alt={Title + ' Poster'} />
           : (<Box w={['9.1rem', 48]} h={[56, 72]} d='flex' alignItems='center' justifyContent='center' bg='gray.700'>
               <Icon as={RiMovie2Fill} color={"pink.300"} boxSize={12} />
             </Box>)

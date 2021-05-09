@@ -27,7 +27,7 @@ const NominatedMovie: FC<MovieProps> = ({ info, onClick }) => {
     <VStack p={[2, 4]} maxW='44'>
       <Box pos="relative">
         {Poster !== 'N/A'
-          ? <Image minW={[32, 32, 36]} h={[48, 48, 52]} src={Poster} boxShadow="lg" objectFit="cover" />
+          ? <Image minW={[32, 32, 36]} h={[48, 48, 52]} src={Poster} boxShadow="lg" objectFit="cover" alt={Title + ' Poster'} />
           : (<Box minW={[32, 32, 36]} h={[48, 48, 52]} d='flex' alignItems='center' justifyContent='center' bg='gray.800'>
               <Icon as={RiMovie2Fill} color={"pink.300"} boxSize={12} />
             </Box>)
