@@ -52,7 +52,7 @@ const SearchBar: FC<SearchBarProps> = ({isLoading, onLoading, onResults, onError
       onErrors('Type in the search bar above to find your favourite movies!');
       onResults('', 1, []);
     }
-  }, [query]);
+  }, [query, onErrors, onLoading, onResults]);
 
   return (
     <InputGroup size="lg" >

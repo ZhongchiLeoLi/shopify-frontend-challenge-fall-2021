@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { BoxProps, Box, Container, HStack } from "@chakra-ui/react";
+import { BoxProps, Box, Container } from "@chakra-ui/react";
 import { Heading } from "@chakra-ui/react";
 import "@fontsource/montserrat"
 
