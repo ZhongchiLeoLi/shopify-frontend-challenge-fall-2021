@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 
 import { BoxProps, Box, VStack, Container, Button, useDisclosure } from "@chakra-ui/react";
 import { Alert, AlertIcon, AlertTitle, AlertDescription, Icon } from "@chakra-ui/react";
@@ -17,14 +17,18 @@ import Nominations from './Nominations';
 
 interface ShoppiesProps extends BoxProps {}
 
-const Shoppies: FC<ShoppiesProps> = ({ children }) => {
+const Shoppies: FC<ShoppiesProps> = () => {
   const [searchedMovies, setSearchedMovies] = useState<MovieInfo[]>([]);
-  const [selectedMovies, setSelectedMovies] = useState<MovieInfo[]>([]);
+  const [selectedMovies, setSelectedMovies] = useState<MovieInfo[]>(JSON.parse(localStorage.getItem('selectedMovies') || '[]'));
   const [isLoading, setIsLoading] = useState(false);
   const [maxPage, setMaxPage] = useState(1);
   const [query, setQuery] = useState('');
   const [error, setError] = useState('');
   const { isOpen, onToggle } = useDisclosure();
+
+  useEffect(() => {
+    localStorage.setItem('selectedMovies', JSON.stringify(selectedMovies));
+  }, [selectedMovies]);
 
   // Request made when pagenation buttons are clicked
   const fetchPage = async (page: number) => {
