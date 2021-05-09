@@ -16,10 +16,10 @@ const Header: FC<HeaderProps> = () => {
     >
         <Box bgGradient="linear(to-b, transparent, gray.900)">
         <Container maxH={['30vh', '50vh']} maxW="container.xl" py={[20, 40]}>
-          <Heading size="4xl" fontWeight="600" color="white" fontFamily='Montserrat'>
+          <Heading fontSize={['2.5rem', '2rem', '4rem']} fontWeight="600" color="white" fontFamily='Montserrat'>
             🍿Shoppies
           </Heading>
-          <Heading py="5" size="md" fontWeight="400" color="gray.200" fontFamily='Montserrat'>
+          <Heading py="5" fontSize={['1.1rem', '1.3rem', '1.5rem']} fontWeight="400" color="gray.200" fontFamily='Montserrat'>
             Pick your top 5 favourite movies for nomination
           </Heading>
         </Container>

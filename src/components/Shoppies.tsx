@@ -82,7 +82,7 @@ const Shoppies: FC<ShoppiesProps> = ({ children }) => {
             <Alert position='fixed' zIndex='3' w='100vw' status="success" top='0px' left='0px'>
               <Container maxW="container.xl" d='flex' flexDirection={['column', 'column', 'row']} alignItems='center'>
                 <AlertIcon />
-                <AlertTitle mr={2}>You have selected the maxinum number of nominations!</AlertTitle>
+                <AlertTitle mr={2}>You have selected the maximum number of nominations!</AlertTitle>
                 <AlertDescription>Unselect some of your current selections to nominate more.</AlertDescription>
               </Container>
             </Alert>
