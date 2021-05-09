@@ -52,7 +52,8 @@ const SearchBar: FC<SearchBarProps> = ({isLoading, onLoading, onResults, onError
       onErrors('Type in the search bar above to find your favourite movies!');
       onResults('', 1, []);
     }
-  }, [query, onErrors, onLoading, onResults]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [query]);
 
   return (
     <InputGroup size="lg" >
