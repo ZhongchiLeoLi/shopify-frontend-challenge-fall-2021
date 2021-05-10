@@ -24,3 +24,4 @@ A website for users to search movies and choose 5 of their favourite movies for 
 
 * Connect with Firebase to provide user authentication and data storage, allowing users to save their selections for revisiting later
 * Change pagination to infinite scroll to reduce the number of clicks required for page navigation, providing a more frictionless browsing experience
+* Implement a serverless function to perform API calls, hiding private keys from the clients
